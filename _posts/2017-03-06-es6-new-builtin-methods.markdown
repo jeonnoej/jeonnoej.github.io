@@ -14,6 +14,7 @@ date:   2017-03-06 13:47:00 +0900
     * 오브젝트의 참조를 복사하므로 깊은 복사에 적합하지 않다.
     * 원시 타입은 객체로 변환된다.
 
+
 ```javascript
     //var target = jQuery.extend(true, {}, sourceObejcts)
     Object.assign(target, ...sourceObejcts);
@@ -37,7 +38,8 @@ date:   2017-03-06 13:47:00 +0900
     * see also
       - findIndex : 조건에 만족하는 엘리먼트의 인덱스가 반환된다.
       - every : 모든 요소가 조건을 만족하는지 검사한다.
-      
+
+
 ```javascript
   [].find(function(element, index, array) {
       console.log(element);
@@ -57,6 +59,8 @@ date:   2017-03-06 13:47:00 +0900
 ## String
  * String Repeating
     * 문자열을 반복한다.
+
+
 ```javascript
 //ES5
   Array((4 * depth) + 1).join(" ");
@@ -71,6 +75,8 @@ date:   2017-03-06 13:47:00 +0900
     * String.endsWith('검색할 문자열', 찾고자 하는 문자열의 길이 [default 문자열 전체 길이])
     * String.includes('검색할 문자열', 찾기 시작할 위치 [default 0])
     * 전부 대소문자 구분
+
+
 ```javascript
 //ES6
   "hello".startsWith("ello", 1) // true
@@ -84,6 +90,8 @@ date:   2017-03-06 13:47:00 +0900
  1. Number Type Checking
     * isNaN() : 숫자인지 아닌지 판별
     * isFinite() : 유한한 값인지 판별
+
+
 ```javascript
 //ES5
   var isNaN = function (n) {
@@ -99,6 +107,8 @@ date:   2017-03-06 13:47:00 +0900
 ```
  2. Number Safety Checking
     * 유효한 정수 값인지 판별
+
+    
 ```javascript
 //ES5
   function isSafeInteger (n) {
