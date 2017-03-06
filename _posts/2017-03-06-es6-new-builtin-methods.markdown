@@ -13,6 +13,7 @@ date:   2017-03-06 13:47:00 +0900
     * null, undefined를 반환하지 않는다.
     * 오브젝트의 참조를 복사하므로 깊은 복사에 적합하지 않다.
     * 원시 타입은 객체로 변환된다.
+
 ```javascript
     //var target = jQuery.extend(true, {}, sourceObejcts)
     Object.assign(target, ...sourceObejcts);
@@ -36,6 +37,7 @@ date:   2017-03-06 13:47:00 +0900
     * see also
       - findIndex : 조건에 만족하는 엘리먼트의 인덱스가 반환된다.
       - every : 모든 요소가 조건을 만족하는지 검사한다.
+      
 ```javascript
   [].find(function(element, index, array) {
       console.log(element);
