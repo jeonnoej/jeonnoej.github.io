@@ -1,28 +1,42 @@
-title: Jeon
+# Site settings
+title: Willian Justen - Desenvolvedor Front End
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jeonnoej.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: WooJin JEON
+user_description: JEON
 email: jeonnoej@naver.com
-author:
-  picture: http://site.hugocarreira.me/assets/img/compressed/hugo.jpg #URL FORMAT
-  name: J
-  location: Seoul - Corea
-  description: "JS"
-description: Web and JS
-baseurl: "/"
-url: https://jeonnoej.github.io/
-twitter_username: jeonnoej
+twitter_username: lorem_ipsum
 github_username:  jeonnoej
-github_url: https://www.github.com/jeonnoej
+gplus_username:  lorem_ipsum
+disqus_username: jeonnoej
 
 # Build settings
-permalink: :title
-paginate: 1
-paginate_path: "page:num"
-kramdown:
-  input: GFM
-  hard_wrap: false
+markdown: kramdown
 highlighter: rouge
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-exclude:
-  - Gemfile
-  - Gemfile.lock
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
